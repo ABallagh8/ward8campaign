@@ -13,7 +13,20 @@
     section { padding: 2rem; max-width: 1000px; margin: auto; background: #fff; margin-top: 1rem; border-radius: 8px; }
     h2 { color: #e04e39; }
     .cta { display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; justify-content: center; }
-    .cta a { background: #e04e39; color: white; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none; }
+    .cta a {
+  padding: 0.75rem 1.5rem;
+  background-color: #e04e39;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta a:hover {
+  background-color: #c43f2c;
+  transform: scale(1.03);
+}
     footer { text-align: center; padding: 1rem; background: #333; color: #fff; margin-top: 2rem; }
   </style>
 </head>
