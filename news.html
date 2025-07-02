@@ -1,53 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alex Ballagh for Ward 8</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-    header { background: #e04e39; color: #fff; padding: 2rem 1rem; text-align: center; }
-    nav { background: #333; color: #fff; display: flex; justify-content: center; flex-wrap: wrap; }
-    nav a { color: #fff; padding: 1rem; text-decoration: none; }
-    nav a:hover { background: #555; }
-    section { padding: 2rem; max-width: 1000px; margin: auto; background: #fff; margin-top: 1rem; border-radius: 8px; }
-    h2 { color: #e04e39; }
-    .cta { display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; justify-content: center; }
-    .cta a { background: #e04e39; color: white; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none; }
-    footer { text-align: center; padding: 1rem; background: #333; color: #fff; margin-top: 2rem; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #e04e39 0%, #f4f4f4 100%);
+      color: white;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+      background-color: #e04e39;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-bottom: 4px solid #c43f2c;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    .cta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .cta a {
+      padding: 0.75rem 1.5rem;
+      background-color: #fff;
+      color: #e04e39;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta a:hover {
+      background-color: #f4f4f4;
+      transform: scale(1.03);
+    }
+
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      background: #555;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #e04e39;
+      margin-bottom: 1rem;
+    }
+
+    article {
+      margin-bottom: 2rem;
+    }
+
+    article h3 {
+      color: #444;
+      margin-bottom: 0.25rem;
+    }
+
+    article p {
+      font-size: 0.95rem;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .image-row img {
+      width: 30%;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .image-row img {
+        width: 100%;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta a {
+        width: 90%;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Alex Ballagh for Ward 8</h1>
     <p>Building a Stronger, Fairer Hamilton — Together.</p>
     <div class="cta">
-      <a href="platform.html">Read the Platform</a>
-      <a href="involve.html">Join the Campaign</a>
+      <a href="platform.html">Explore the Platform</a>
+      <a href="involve.html">Get Involved</a>
     </div>
   </header>
-<body>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="platform.html">Platform</a>
     <a href="community.html">Community Work</a>
+    <a href="news.html">News</a>
     <a href="involve.html">Get Involved</a>
     <a href="contact.html">Contact</a>
   </nav>
 
   <section>
-    <h2>News & Updates</h2>
-    <ul>
-      <li><strong>May 15th 2025:</strong> Alex speaks at the city’s housing and affordability forum.</li>
-      <li><strong>July 22nd 2025:</strong> Launch of our ward-wide listening tour — meeting residents where they live.</li>
-      <li><strong>August 2025:</strong> Door knockers wanted! Join the campaign for abetter ward 8!</li>
-    </ul>
+    <h2>Campaign News & Media</h2>
+
+    <article>
+      <h3>📣 Endorsement: ACORN Hamilton backs Alex Ballagh</h3>
+      <p>We're proud to announce that Hamilton ACORN has officially endorsed our campaign for Ward 8. As Co-Chair of the Downtown Chapter, Alex has fought for stronger tenant protections and passed Ontario’s first anti-renoviction bylaw.</p>
+    </article>
+
+    <article>
+      <h3>🏘️ Housing Justice in Action</h3>
+      <p>This week, Alex joined tenant leaders from across Hamilton to speak at City Hall in support of stronger rent control, a Vacant Property Tax, and the expansion of non-market housing. “Housing is a right — not a revenue stream,” said Alex in the delegation.</p>
+    </article>
+
+    <article>
+      <h3>🎤 Rallying for Workers’ Rights</h3>
+      <p>At the Unifor 5555 solidarity event, Alex stood with striking workers demanding fair wages and better conditions in public services. We need stronger union protections and living wages across all sectors.</p>
+    </article>
+
+    <article>
+      <h3>🎓 Empowering Young Voters at Mohawk</h3>
+      <p>Alex hosted a voter registration booth and Q&A at Mohawk College to make civic engagement more accessible for students and first-time voters. The energy is growing — and so is the movement!</p>
+    </article>
+
+    <article>
+      <h3>🌳 Community Canvass & Tree Planting</h3>
+      <p>Dozens of neighbours joined our campaign team for a door-knock and community clean-up in Rolston. Thank you for helping us build a greener, more connected Ward 8 — one conversation at a time.</p>
+    </article>
+
+    <div class="image-row">
+      <img src="IMG_4019.JPG" alt="Alex with flag" />
+      <img src="IMG_4061.JPG" alt="Alex in community" />
+      <img src="IMG_4115.JPG" alt="Alex door knocking" />
+    </div>
+
+    <div class="cta" style="margin-top: 2rem;">
+      <a href="contact.html">Share Your Story</a>
+      <a href="involve.html">Volunteer or Host a Lawn Sign</a>
+    </div>
   </section>
 
   <footer>
     <p>Authorized by</p>
     <p>2025 Alex Ballagh for Ward 8</p>
   </footer>
+
 </body>
 </html>
