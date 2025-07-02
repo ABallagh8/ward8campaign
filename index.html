@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alex Ballagh for Ward 8</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
       background: #f4f4f4;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background: #e04e39;
+      background: url('banner.jpg') center/cover no-repeat fixed;
       color: #fff;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 5rem 1rem 6rem;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 0;
+    }
+
+    header h1, header p, header .cta {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
     }
 
     nav {
       background: #333;
-      color: #fff;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -32,31 +64,19 @@
       color: #fff;
       padding: 1rem;
       text-decoration: none;
+      font-weight: 600;
     }
 
     nav a:hover {
       background: #555;
     }
 
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      margin-top: 1rem;
-      border-radius: 8px;
-    }
-
-    h2 {
-      color: #e04e39;
-    }
-
     .cta {
       display: flex;
       gap: 1rem;
-      margin-top: 1rem;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
     }
 
     .cta a {
@@ -74,6 +94,25 @@
       transform: scale(1.03);
     }
 
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 8px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: #e04e39;
+      margin-bottom: 1rem;
+    }
+
     .image-row {
       display: flex;
       justify-content: center;
@@ -84,8 +123,25 @@
 
     .image-row img {
       width: 30%;
-      height: auto;
       border-radius: 8px;
+    }
+
+    .intro-image {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .intro-image img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .intro-image p {
+      flex: 1;
     }
 
     footer {
@@ -95,9 +151,32 @@
       color: #fff;
       margin-top: 2rem;
     }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .image-row img,
+      .intro-image img {
+        width: 100%;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta a {
+        width: 90%;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Alex Ballagh for Ward 8</h1>
     <p>Building a Stronger, Fairer Hamilton — Together.</p>
@@ -106,13 +185,6 @@
       <a href="involve.html">Join the Campaign</a>
     </div>
   </header>
-
-  <!-- Centered image row -->
-  <div class="image-row">
-    <img src="448871240_486967677051748_1370570062557064044_n.jpg" alt="Alex with community members">
-    <img src="IMG_4019.JPG" alt="Alex with Flag">
-    <img src="IMG_4237.JPG" alt="Alex without Flag">
-  </div>
 
   <nav>
     <a href="about.html">About</a>
@@ -123,27 +195,31 @@
     <a href="contact.html">Contact</a>
   </nav>
 
+  <div class="image-row">
+    <img src="448871240_486967677051748_1370570062557064044_n.jpg" alt="Alex with community members" />
+    <img src="IMG_4019.JPG" alt="Alex with Flag" />
+    <img src="IMG_4237.JPG" alt="Alex without Flag" />
+  </div>
+
   <section>
     <h2>Welcome to the Campaign for a Better Ward 8</h2>
     <p>I'm Alex Ballagh — a proud Hamiltonian, national program coordinator, and dedicated community organizer. I'm running for City Councillor in Ward 8 because I believe our neighbourhoods deserve leadership that listens, acts boldly, and never forgets who it's working for.</p>
 
-    <div style="display: flex; flex-wrap: wrap; align-items: center; margin-top: 2rem;">
-      <img src="IMG_5029mod.JPG" alt="Alex speaking at an event" style="max-width: 300px; width: 100%; margin-right: 1rem; border-radius: 8px;">
-      <p style="flex: 1;">Hamilton is a city of strength, diversity, and resilience — but too many of us are being left behind. Whether it's skyrocketing rents, inaccessible transit, crumbling infrastructure, or closed-door decision-making at City Hall, people in Ward 8 are ready for change. And so am I.</p>
+    <div class="intro-image">
+      <img src="IMG_5029mod.JPG" alt="Alex speaking at an event" />
+      <p>Hamilton is a city of strength, diversity, and resilience — but too many of us are being left behind. Whether it's skyrocketing rents, inaccessible transit, crumbling infrastructure, or closed-door decision-making at City Hall, people in Ward 8 are ready for change. And so am I.</p>
     </div>
 
     <p>This campaign isn’t about politics as usual. It’s about people. It’s about building a city where every neighbour is heard, where affordability and climate action are priorities — not afterthoughts — and where we fight for justice, not just promises.</p>
 
     <p>Join us as we knock on doors, build connections, and bring hope and action to every street, every building, and every household in Ward 8. Together, we can reshape Hamilton's future — and it starts right here, with you.</p>
 
-    <!-- Second image row -->
     <div class="image-row">
-      <img src="IMG_4115.JPG" alt="Alex door knocking">
-      <img src="513257680_1184392743722234_7547148638492006200_n.jpg" alt="Alex at a town hall">
-      <img src="IMG_4061.JPG" alt="Alex with community">
+      <img src="IMG_4115.JPG" alt="Alex door knocking" />
+      <img src="513257680_1184392743722234_7547148638492006200_n.jpg" alt="Alex at a town hall" />
+      <img src="IMG_4061.JPG" alt="Alex with community" />
     </div>
 
-    <!-- Bottom CTA -->
     <div class="cta">
       <a href="platform.html">Explore the Platform</a>
       <a href="involve.html">Join the Movement</a>
@@ -154,5 +230,6 @@
     <p>Authorized by</p>
     <p>2025 Alex Ballagh for Ward 8</p>
   </footer>
+
 </body>
 </html>
