@@ -1,20 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alex Ballagh for Ward 8</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-    header { background: #e04e39; color: #fff; padding: 2rem 1rem; text-align: center; }
-    nav { background: #333; color: #fff; display: flex; justify-content: center; flex-wrap: wrap; }
-    nav a { color: #fff; padding: 1rem; text-decoration: none; }
-    nav a:hover { background: #555; }
-    section { padding: 2rem; max-width: 1000px; margin: auto; background: #fff; margin-top: 1rem; border-radius: 8px; }
-    h2 { color: #e04e39; }
-    .cta { display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; justify-content: center; }
-    .cta a { background: #e04e39; color: white; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none; }
-    footer { text-align: center; padding: 1rem; background: #333; color: #fff; margin-top: 2rem; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #e04e39;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      padding: 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #555;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #e04e39;
+      margin-bottom: 1rem;
+    }
+    .photo-block {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .photo-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .photo-text {
+      flex: 1 1 60%;
+    }
+    .photo-image {
+      flex: 1 1 35%;
+    }
+    .photo-image img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .cta {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .cta a {
+      background: #e04e39;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: #fff;
+      margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+      .photo-block {
+        flex-direction: column !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -26,7 +102,7 @@
       <a href="involve.html">Join the Campaign</a>
     </div>
   </header>
-<body>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -38,14 +114,80 @@
 
   <section>
     <h2>Community Work</h2>
-    <p>My campaign is grounded in the lived experience of working with and for the community. Here are a few of the initiatives I've led or been deeply involved in:</p>
-    <ul>
-      <li><strong>Fundraising for the NDP National Convention:</strong> Organized a successful concert fundraiser to help bring diverse voices to the national stage.</li><p></p>
-      <li><strong>Tenant-Led Response Initiatives:</strong> Coordinated community-led strategies for overdose response and housing advocacy in nonprofit and student housing sectors.</li><p></p>
-      <li><strong>Community Engagement Research:</strong> Developed toolkits to support NDP riding associations in recruiting and retaining volunteers, improving local participation in democratic processes.</li><p></p>
-      <li><strong>Graduate Student Leadership:</strong> Served as VP of the McMaster Graduate Student Association, advocating for better services, mental health supports, and fair funding for students.</li><p></p>
-      <li><strong>Grassroots Campaigning:</strong> Worked on civic engagement projects across Hamilton focused on climate, justice, and equitable development.</li>
-    </ul>
+
+    <div class="photo-block">
+      <div class="photo-text">
+        <h3>Grassroots Campaigning</h3>
+        <p>I’ve organized concerts, canvasses, and policy roundtables that bring people together to solve problems and build power — from student housing to mental health and climate justice.</p>
+      </div>
+      <div class="photo-image">
+        <img src="community_concert.jpg" alt="Alex at community concert" />
+      </div>
+    </div>
+
+    <div class="photo-block">
+      <div class="photo-text">
+        <h3>Student Advocacy</h3>
+        <p>As Vice President of the McMaster Graduate Student Association, I fought for fair funding, better services, and meaningful mental health supports for our academic community.</p>
+      </div>
+      <div class="photo-image">
+        <img src="student_advocacy.jpg" alt="Alex speaking at McMaster" />
+      </div>
+    </div>
+
+    <div class="photo-block">
+      <div class="photo-text">
+        <h3>Democratic Renewal</h3>
+        <p>I authored and distributed toolkits to help local NDP riding associations recruit, engage, and retain grassroots volunteers — work that’s since empowered dozens of new local leaders.</p>
+      </div>
+      <div class="photo-image">
+        <img src="ndp_toolkit.jpg" alt="Alex at democratic reform event" />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tenant Organizing & Housing Justice with ACORN</h2>
+
+    <div class="photo-block">
+      <div class="photo-text">
+        <h3>Co-Chairing Hamilton ACORN</h3>
+        <p>As Co-Chair of the Downtown Chapter, I’ve helped tenants organize, fight back, and win against some of the worst slumlords in the country — including at 27 Bold and 103 Emerald.</p>
+      </div>
+      <div class="photo-image">
+        <img src="acorn_meeting.jpg" alt="Alex at ACORN tenant meeting" />
+      </div>
+    </div>
+
+    <div class="photo-block">
+      <div class="photo-text">
+        <h3>Winning Anti-Renoviction Protections</h3>
+        <p>I helped ACORN pass Ontario’s first-ever anti-renoviction and anti-demoviction bylaw, protecting vulnerable renters from displacement across the city.</p>
+      </div>
+      <div class="photo-image">
+        <img src="renoviction_win.jpg" alt="Alex celebrating policy win" />
+      </div>
+    </div>
+
+    <div class="photo-block">
+      <div class="photo-text">
+        <h3>Direct Action & Solidarity</h3>
+        <p>From maximum heat protests to LCBO solidarity marches and hosting elected officials face-to-face with tenants — I’ve always believed that showing up together is the first step toward change.</p>
+      </div>
+      <div class="photo-image">
+        <img src="protest.jpg" alt="Alex leading protest with ACORN" />
+      </div>
+    </div>
+
+    <div class="photo-block">
+      <div class="photo-text">
+        <h3>Outreach & Organizing</h3>
+        <p>I’ve led ACORN outreach at libraries, Art Crawl, May Day, and Labour Day. I also helped rebuild the Hamilton Mountain chapter and organized annual picnics to strengthen our movement.</p>
+      </div>
+      <div class="photo-image">
+        <img src="picnic.jpg" alt="ACORN picnic and outreach" />
+      </div>
+    </div>
   </section>
 
   <footer>
