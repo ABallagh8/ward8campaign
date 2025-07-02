@@ -1,85 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alex Ballagh for Ward 8</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
       background: #f4f4f4;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
-      background: #e04e39;
-      color: #fff;
-      padding: 2rem 1rem;
+      background: linear-gradient(to bottom, #e04e39 0%, #f4f4f4 100%);
+      color: white;
+      padding: 3rem 1rem 2rem;
       text-align: center;
+      background-color: #e04e39;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-bottom: 4px solid #c43f2c;
     }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
     nav {
       background: #333;
-      color: #fff;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
     }
+
     nav a {
       color: #fff;
       padding: 1rem;
       text-decoration: none;
+      font-weight: 600;
     }
+
     nav a:hover {
       background: #555;
     }
+
+    .cta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .cta a {
+      padding: 0.75rem 1.5rem;
+      background-color: #fff;
+      color: #e04e39;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta a:hover {
+      background-color: #f4f4f4;
+      transform: scale(1.03);
+    }
+
     .main-container {
       display: flex;
       justify-content: center;
       align-items: flex-start;
       margin: 2rem auto;
       max-width: 1400px;
+      gap: 2rem;
     }
+
     .photo-column {
-      width: 50%;
-      padding: 1rem;
+      width: 30%;
+      padding: 1rem 0;
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
+
     .photo-column img {
       width: 100%;
       border-radius: 8px;
     }
+
     .content {
       width: 100%;
       background: #fff;
       padding: 2rem;
       border-radius: 8px;
     }
+
     h2 {
       color: #e04e39;
+      margin-top: 2rem;
     }
-    .cta {
-      display: flex;
-      gap: 1rem;
-      margin-top: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
+
+    ul {
+      padding-left: 1.5rem;
     }
-    .cta a {
-      background: #e04e39;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
-    .cta a:hover {
-      background-color: #c43f2c;
-      transform: scale(1.03);
-    }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -87,21 +125,38 @@
       color: #fff;
       margin-top: 2rem;
     }
+
+    @media (max-width: 1024px) {
+      .main-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .photo-column {
+        width: 90%;
+        order: 2;
+      }
+      .content {
+        width: 95%;
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Alex Ballagh for Ward 8</h1>
     <p>Building a Stronger, Fairer Hamilton — Together.</p>
     <div class="cta">
-      <a href="platform.html">Read the Platform</a>
+      <a href="platform.html">Explore the Platform</a>
       <a href="involve.html">Join the Campaign</a>
     </div>
   </header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="platform.html">Platform</a>
+    <a href="community.html">Community Work</a>
     <a href="involve.html">Get Involved</a>
     <a href="news.html">News</a>
     <a href="contact.html">Contact</a>
@@ -109,88 +164,75 @@
 
   <div class="main-container">
     <div class="photo-column">
-      <img src="Alex ACORN Emerald 2.jpg" alt="Community event 1">
-      <img src="Alex Repair Cafe.jpg" alt="Community event 2">
-      <img src="Alex unionizes Bold.jpg" alt="Community event 3">
-      <img src="Alex CoChair.jpg" alt="Community event 7">
-      <img src="Alex at Marathon.jpg" alt="Community event 8">
-      <img src="Pic w Monique and Pal.jpg" alt="Community event 9">
+      <img src="Alex ACORN Emerald 2.jpg" alt="Alex at ACORN" />
+      <img src="Alex Repair Cafe.jpg" alt="Alex at Repair Café" />
+      <img src="Alex unionizes Bold.jpg" alt="Alex organizing workers" />
+      <img src="Alex CoChair.jpg" alt="Alex co-chairing ACORN" />
+      <img src="Alex at Marathon.jpg" alt="Alex at community event" />
+      <img src="Pic w Monique and Pal.jpg" alt="Alex with supporters" />
     </div>
 
     <div class="content">
       <section>
-        <h2>Meet Alex</h2>
-        <p>I’m Alex Ballagh — a project manager, community organizer, and lifelong Hamiltonian. I’m running for City Councillor in Ward 8 because I believe our city deserves more transparent leadership, bolder policy, and a council that listens. With a background in research, public service, and grassroots advocacy, I’ve spent years solving problems, building partnerships, and fighting for the change our communities need.</p>
+        <h2>Community Leadership</h2>
+        <p>My campaign is powered by years of experience leading grassroots action in Ward 8 and across Hamilton — from housing justice and union rights to climate action and democratic reform. Here's some of what I’ve built and fought for:</p>
+      </section>
+
+      <section>
+        <h2>🏘️ Housing & Tenant Advocacy</h2>
         <ul>
-          <li>Master of Medical Science & PMP Certified</li>
-          <li>Community volunteer and social services advocate</li>
-          <li>Lead organizer for city-wide engagement and fundraising campaigns</li>
-          <li>Focused on affordability, transit, housing, and climate justice</li>
+          <li>Elected Co-Chair of Hamilton ACORN Downtown Chapter</li>
+          <li>Led passage of Ontario’s first anti-renoviction and anti-demoviction bylaws</li>
+          <li>Organized tenant unions and rent strikes to improve housing conditions</li>
+          <li>Supported campaigns for a Vacant Property Tax and maximum heat bylaw for tenants</li>
+          <li>Collaborated with Hamilton Alliance for Tiny Shelters (HATS) to expand shelter access</li>
         </ul>
       </section>
 
       <section>
-        <h2>Community Work</h2>
-        <p>My campaign is grounded in the lived experience of working with and for the community. Here are a few of the initiatives I've led or been deeply involved in:</p>
+        <h2>✊ Labour, Health & Public Services</h2>
         <ul>
-          <li><strong>Fundraising for the NDP National Convention:</strong> Organized a successful concert fundraiser to help bring diverse voices to the national stage.</li>
-          <li><strong>Tenant-Led Response Initiatives:</strong> Coordinated community-led strategies for overdose response and housing advocacy in nonprofit and student housing sectors.</li>
-          <li><strong>Community Engagement Research:</strong> Developed toolkits to support NDP riding associations in recruiting and retaining volunteers, improving local participation in democratic processes.</li>
-          <li><strong>Graduate Student Leadership:</strong> Served as VP of the McMaster Graduate Student Association, advocating for better services, mental health supports, and fair funding for students.</li>
-          <li><strong>Grassroots Campaigning:</strong> Worked on civic engagement projects across Hamilton focused on climate, justice, and equitable development.</li>
+          <li>Organizer with Unifor 5555, public healthcare advocate with Ontario Health Coalition</li>
+          <li>Unionized workers in the nonprofit sector and pushed for stronger workplace protections</li>
+          <li>St. Joe’s Hospital volunteer and supporter of community healthcare accessibility</li>
         </ul>
       </section>
 
       <section>
-        <h2>ACORN Advocacy</h2>
+        <h2>📣 Political Organizing & Reform</h2>
         <ul>
-          <li>Elected Co-Chair of the Hamilton ACORN Downtown Chapter</li>
-          <li>Passed anti-renoviction and anti-demoviction bylaws — the first in Ontario</li>
-          <li>Organized and spoke at national and local protests, conventions, and community events</li>
-          <li>Unionized tenants and fought for improved housing conditions across Hamilton</li>
-          <li>Led public delegations and advocacy campaigns to shape policy</li>
+          <li>Chair of federal Election Planning Committee for grassroots candidates</li>
+          <li>Wrote national engagement toolkits for the NDP and trained volunteers across Canada</li>
+          <li>Helped democratize local riding associations and increase youth, newcomer, and equity participation</li>
         </ul>
       </section>
 
       <section>
-        <h2>Other Initiatives</h2>
-        <p><strong>Graduate Student Association Leadership:</strong></p>
+        <h2>🎓 Student & Youth Leadership</h2>
         <ul>
-          <li>Reinstated and expanded mental health services (Empower Me program)</li>
-          <li>Founded the Graduate Clubs Committee and Sports League Committee</li>
+          <li>VP of McMaster Graduate Student Association (GSA)</li>
+          <li>Reinstated and expanded mental health coverage (Empower Me)</li>
+          <li>Founded the GSA Sports League and Clubs Committee to build student community life</li>
         </ul>
+      </section>
 
-        <p><strong>Housing & Shelters:</strong></p>
+      <section>
+        <h2>🌿 Local Climate & Justice Work</h2>
         <ul>
-          <li>Organizer with Hamilton Alliance for Tiny Shelters (HATS)</li>
-        </ul>
-
-        <p><strong>Democratic Reform:</strong></p>
-        <ul>
-          <li>Chair of Election Planning Committee and author of national toolkits and audits</li>
-        </ul>
-
-        <p><strong>Public Health & Labour:</strong></p>
-        <ul>
-          <li>Board member with Ontario Health Coalition</li>
-          <li>Volunteer with Unifor 5555 and St. Joseph’s Hospital</li>
-        </ul>
-
-        <p><strong>Cultural & Local Events:</strong></p>
-        <ul>
-          <li>Organizer for Pride Hamilton and Black Throne Productions</li>
-          <li>YWCA volunteer and gala sponsor coordinator</li>
+          <li>Organized city-wide mutual aid, climate justice protests, and sustainable development actions</li>
+          <li>Volunteer with Black Throne Productions and Pride Hamilton</li>
+          <li>YWCA gala and fundraising team lead</li>
         </ul>
       </section>
     </div>
 
     <div class="photo-column">
-      <img src="Alex Friendly.jpg" alt="Community event 4">
-      <img src="Alex Leading ACORN Protest.jpg" alt="Community event 5">
-      <img src="Alex marching w union.JPG" alt="Community event 6">
-      <img src="Alex at Pride.JPG" alt="Community event 10">
-      <img src="Grocery Greed.JPG" alt="Community event 11">
-      <img src="picket with CUPE.jpg" alt="Community event 12">
+      <img src="Alex Friendly.jpg" alt="Alex smiling with community" />
+      <img src="Alex Leading ACORN Protest.jpg" alt="Alex leading protest" />
+      <img src="Alex marching w union.JPG" alt="Alex marching with union" />
+      <img src="Alex at Pride.JPG" alt="Alex at Pride Hamilton" />
+      <img src="Grocery Greed.JPG" alt="Alex protesting grocery greed" />
+      <img src="picket with CUPE.jpg" alt="Alex supporting CUPE" />
     </div>
   </div>
 
@@ -198,5 +240,6 @@
     <p>Authorized by</p>
     <p>2025 Alex Ballagh for Ward 8</p>
   </footer>
+
 </body>
 </html>
