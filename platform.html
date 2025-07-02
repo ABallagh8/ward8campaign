@@ -15,49 +15,46 @@
       line-height: 1.6;
     }
     header {
-      background: linear-gradient(135deg, #e04e39, #ff7043);
-      color: #fff;
-      padding: 3rem 1rem 4rem;
-      text-align: center;
-      box-shadow: 0 4px 10px rgb(224 78 57 / 0.4);
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.25rem;
-      letter-spacing: 2px;
-    }
-    header p {
-      font-size: 1.3rem;
-      margin-bottom: 1.5rem;
-      font-weight: 600;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .cta {
-      display: flex;
-      justify-content: center;
-      gap: 1.25rem;
-      flex-wrap: wrap;
-      margin-top: 1.5rem;
-    }
-    .cta a {
-      background-color: #fff;
-      color: #e04e39;
-      font-weight: 700;
-      padding: 0.85rem 2rem;
-      border-radius: 30px;
-      text-decoration: none;
-      box-shadow: 0 3px 6px rgb(224 78 57 / 0.4);
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    .cta a:hover,
-    .cta a:focus {
-      background-color: #e04e39;
-      color: #fff;
-      outline: none;
-      box-shadow: 0 0 12px #ff6f53;
-    }
+  background: linear-gradient(to bottom, #e04e39 0%, #f4f4f4 100%);
+  color: white;
+  padding: 3rem 1rem 2rem;
+  text-align: center;
+  color: #fff;
+  background-color: #e04e39;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-bottom: 4px solid #c43f2c;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.cta a {
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  color: #e04e39;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.cta a:hover {
+  background-color: #f4f4f4;
+  transform: scale(1.03);
+}
+
     nav {
       background-color: #333;
       display: flex;
@@ -162,14 +159,14 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Alex Ballagh for Ward 8</h1>
-    <p>Building a Safer, Greener, and More Inclusive Hamilton — Together.</p>
-    <div class="cta">
-      <a href="platform.html">Explore My Platform</a>
-      <a href="involve.html">Get Involved</a>
-    </div>
-  </header>
+<header>
+  <h1>Alex Ballagh for Ward 8</h1>
+  <p>Building a Stronger, Fairer Hamilton — Together.</p>
+  <div class="cta">
+    <a href="index.html">← Back to Home</a>
+    <a href="involve.html">Join the Campaign</a>
+  </div>
+</header>
 
   <nav>
     <a href="index.html">Home</a>
