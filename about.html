@@ -1,23 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alex Ballagh for Ward 8</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-    header { background: #e04e39; color: #fff; padding: 2rem 1rem; text-align: center; }
-    nav { background: #333; color: #fff; display: flex; justify-content: center; flex-wrap: wrap; }
-    nav a { color: #fff; padding: 1rem; text-decoration: none; }
-    nav a:hover { background: #555; }
-    section { padding: 2rem; max-width: 1000px; margin: auto; background: #fff; margin-top: 1rem; border-radius: 8px; }
-    h2 { color: #e04e39; }
-    .cta { display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; justify-content: center; }
-    .cta a { background: #e04e39; color: white; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none; }
-    footer { text-align: center; padding: 1rem; background: #333; color: #fff; margin-top: 2rem; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #e04e39;
+      color: #fff;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      background: #555;
+    }
+    .cta {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .cta a {
+      background: #fff;
+      color: #e04e39;
+      padding: 0.75rem 1.5rem;
+      border: 2px solid #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .cta a:hover {
+      background: #fff;
+      color: #c43f2c;
+    }
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #e04e39;
+      margin-bottom: 1rem;
+    }
+    .section-block {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .section-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .section-text {
+      flex: 1 1 60%;
+    }
+    .section-image {
+      flex: 1 1 35%;
+    }
+    .section-image img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.25rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: #fff;
+      margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+      .section-block {
+        flex-direction: column !important;
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Alex Ballagh for Ward 8</h1>
     <p>Building a Stronger, Fairer Hamilton — Together.</p>
@@ -26,7 +118,7 @@
       <a href="involve.html">Join the Campaign</a>
     </div>
   </header>
-<body>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="platform.html">Platform</a>
@@ -38,18 +130,54 @@
 
   <section>
     <h2>Meet Alex</h2>
-    <p>I’m Alex Ballagh — a project manager, community organizer, and lifelong Hamiltonian. I’m running for City Councillor in Ward 8 because I believe our city deserves more transparent leadership, bolder policy, and a council that listens. With a background in research, public service, and grassroots advocacy, I’ve spent years solving problems, building partnerships, and fighting for the change our communities need.</p>
-    <ul>
-      <li>Master of Medical Science & PMP Certified</li>
-      <li>Community volunteer and social services advocate</li>
-      <li>Lead organizer for city-wide engagement and fundraising campaigns</li>
-      <li>Focused on affordability, transit, housing, and climate justice</li>
-    </ul>
+
+    <div class="section-block">
+      <div class="section-text">
+        <p>I’m <strong>Alex Ballagh</strong> — a proud Hamiltonian, seasoned project manager, and committed community builder. With deep roots in public service and grassroots organizing, I’ve spent my career bridging strategy and compassion to deliver results that matter.</p>
+        <ul>
+          <li>Master of Medical Science & Project Management Professional (PMP) certified</li>
+          <li>Experienced in research, logistics, operations, and cross-sector collaboration</li>
+          <li>Former lab manager, research liaison, and national program coordinator</li>
+        </ul>
+      </div>
+      <div class="section-image">
+        <img src="your_image1.jpg" alt="Alex speaking at an event" />
+      </div>
+    </div>
+
+    <div class="section-block">
+      <div class="section-text">
+        <p>As a volunteer and organizer, I’ve led city-wide initiatives, including concerts, policy roundtables, and grassroots campaigns. I’ve helped amplify marginalized voices, strengthen housing advocacy, and challenge outdated systems from the ground up.</p>
+        <ul>
+          <li>Lead organizer for 2023 NDP national convention fundraiser concert</li>
+          <li>Chair of Election Planning Committee since 2023</li>
+          <li>Volunteer mentor and community service organizer across Hamilton</li>
+        </ul>
+      </div>
+      <div class="section-image">
+        <img src="your_image2.jpg" alt="Alex organizing a community event" />
+      </div>
+    </div>
+
+    <div class="section-block">
+      <div class="section-text">
+        <p>My campaign is rooted in **action, not talk** — focused on the real issues facing Ward 8: affordability, housing, transit, and climate justice. I know how to get results because I’ve done it before — in research labs, in boardrooms, and on doorsteps across the city.</p>
+        <ul>
+          <li>Proven track record of improving systems, cutting waste, and scaling solutions</li>
+          <li>Strategic thinker grounded in empathy and lived experience</li>
+          <li>Ready to build a Hamilton that works — for everyone</li>
+        </ul>
+      </div>
+      <div class="section-image">
+        <img src="your_image3.jpg" alt="Alex knocking on doors in Ward 8" />
+      </div>
+    </div>
   </section>
 
   <footer>
     <p>Authorized by</p>
     <p>2025 Alex Ballagh for Ward 8</p>
   </footer>
+
 </body>
 </html>
