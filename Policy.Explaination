@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alex Ballagh — Platform for Ward 8</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f6f2;
+      color: #333;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2rem 1rem;
+    }
+    header {
+      background: linear-gradient(135deg, #e04e39, #ff7043);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 10px rgb(224 78 57 / 0.4);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    section {
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1.75rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 14px rgb(0 0 0 / 0.1);
+    }
+    h2 {
+      color: #e04e39;
+      margin-bottom: 0.75rem;
+      border-bottom: 3px solid #ff7043;
+      padding-bottom: 0.25rem;
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    a.button-back {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #e04e39;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 3px 6px rgb(224 78 57 / 0.4);
+      transition: background-color 0.3s ease;
+    }
+    a.button-back:hover,
+    a.button-back:focus {
+      background-color: #cc3b25;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alex Ballagh — Platform for Ward 8</h1>
+  </header>
+
+  <section>
+    <h2>Aging Infrastructure & Safer Streets</h2>
+    <p>Our roads, sidewalks, and community spaces must be safe and accessible for everyone — from kids to seniors. I will push for:</p>
+    <ul>
+      <li>Complete-streets upgrades on key corridors like Upper James and Rymal Road with sidewalks, bike lanes, and curb accessibility.</li>
+      <li>Neighbourhood sidewalk repairs and traffic calming to protect pedestrians and cyclists.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Road Safety & Traffic Calming</h2>
+    <p>Speeding and heavy truck traffic threaten our residential streets. My priorities include:</p>
+    <ul>
+      <li>Installing additional speed humps in Rolston and Bonnington.</li>
+      <li>Improving intersections such as Claremont Access for safer vehicle and pedestrian flow.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Community Safety & Partnerships</h2>
+    <p>Working collaboratively with police and community groups to reduce crime and increase safety, I will advocate for:</p>
+    <ul>
+      <li>More foot patrols and community policing in hotspot areas.</li>
+      <li>Targeted intervention and youth programs to address root causes of crime.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Affordable Housing & Tenant Protections</h2>
+    <p>Housing should be attainable and safe for all residents. I will champion:</p>
+    <ul>
+      <li>Gentle density policies, supporting duplexes and townhomes to increase affordable supply.</li>
+      <li>A vacant property tax to discourage speculation and empty homes.</li>
+      <li>A maximum heat bylaw to guarantee tenants safe, livable temperatures year-round.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Union Rights & Workers’ Protections</h2>
+    <p>I support strong unions and workers by:</p>
+    <ul>
+      <li>Fighting for fair wages, workplace safety, and the right to organize.</li>
+      <li>Backing local efforts to strengthen labour protections and job security.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Transit & LRT Readiness</h2>
+    <p>To get more people out of their cars, I will:</p>
+    <ul>
+      <li>Push for improved bus routes and expanded weekend service.</li>
+      <li>Lead public education campaigns about the LRT to ensure smooth transit connections.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Parks, Trails & Recreation</h2>
+    <p>Everyone deserves access to safe, welcoming green spaces. I’ll work to:</p>
+    <ul>
+      <li>Build equitable splash pads and connect trails along the escarpment.</li>
+      <li>Ensure accessibility for families and seniors in all new park projects.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Climate Action & Sustainability</h2>
+    <p>Ward 8 must be a leader in climate resilience. I will fight for:</p>
+    <ul>
+      <li>Expanded tree planting and biodiversity initiatives.</li>
+      <li>Electrification of city fleets and green development policies.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Healthcare & Education Supports</h2>
+    <p>Stronger healthcare and educational resources are essential. I will advocate for:</p>
+    <ul>
+      <li>Improved access to local health services, including mental health supports.</li>
+      <li>Community education programs for youth and seniors.</li>
+    </ul>
+  </section>
+
+  <a href="index.html" class="button-back">← Back to Home</a>
+</body>
+</html>
