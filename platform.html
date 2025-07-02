@@ -1,4 +1,186 @@
-<main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alex Ballagh for Ward 8</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f6f2;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #e04e39, #ff7043);
+      color: #fff;
+      padding: 3rem 1rem 4rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgb(224 78 57 / 0.4);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.25rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta {
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+    .cta a {
+      background-color: #fff;
+      color: #e04e39;
+      font-weight: 700;
+      padding: 0.85rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgb(224 78 57 / 0.4);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .cta a:hover,
+    .cta a:focus {
+      background-color: #e04e39;
+      color: #fff;
+      outline: none;
+      box-shadow: 0 0 12px #ff6f53;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0.5rem 0;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: #fff;
+      padding: 1rem 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover,
+    nav a:focus {
+      background-color: #555;
+      outline: none;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      background: #fff;
+      border-radius: 12px;
+      padding: 2.5rem 3rem;
+      box-shadow: 0 6px 14px rgb(0 0 0 / 0.1);
+    }
+    h2 {
+      color: #e04e39;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      border-bottom: 3px solid #ff7043;
+      padding-bottom: 0.3rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 1.25rem;
+      font-size: 1.1rem;
+      padding-left: 2.7rem;
+      position: relative;
+      line-height: 1.4;
+    }
+    ul li strong {
+      display: block;
+      font-size: 1.2rem;
+      color: #cc3b25;
+      margin-bottom: 0.3rem;
+    }
+    /* Emoji style */
+    ul li::before {
+      content: attr(data-emoji);
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.7rem;
+      line-height: 1;
+    }
+    p.lead {
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: #444;
+    }
+    p.strong {
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-top: 2rem;
+      color: #2f2f2f;
+      text-align: center;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      box-shadow: 0 -2px 6px rgb(0 0 0 / 0.25);
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      main {
+        padding: 2rem 1.5rem;
+      }
+      nav a {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alex Ballagh for Ward 8</h1>
+    <p>Building a Safer, Greener, and More Inclusive Hamilton — Together.</p>
+    <div class="cta">
+      <a href="platform.html">Explore My Platform</a>
+      <a href="involve.html">Get Involved</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Alex</a>
+    <a href="community.html">Community Work</a>
+    <a href="involve.html">Get Involved</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+ <main>
   <h2>My Vision for Ward 8</h2>
   <p class="lead">
     Together, we can build a Ward 8 where everyone feels safe, valued, and at home — whether you’re a homeowner, student, family, or newcomer.
@@ -57,3 +239,10 @@
     <a href="platform.html">📘 Read the Full Policy Breakdown</a>
   </div>
 </main>
+
+  <footer>
+    <p>Authorized by</p>
+    <p>2025 Alex Ballagh for Ward 8</p>
+  </footer>
+</body>
+</html>
