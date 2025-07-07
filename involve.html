@@ -77,11 +77,32 @@
       background: #555;
     }
 
-    section {
-      max-width: 1000px;
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       margin: 2rem auto;
-      padding: 2rem;
+      max-width: 1400px;
+      gap: 2rem;
+    }
+
+    .photo-column {
+      width: 30%;
+      padding: 1rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .photo-column img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .content {
+      width: 100%;
       background: #fff;
+      padding: 2rem;
       border-radius: 8px;
     }
 
@@ -111,19 +132,17 @@
       margin-top: 2rem;
     }
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      nav {
+    @media (max-width: 1024px) {
+      .main-container {
         flex-direction: column;
         align-items: center;
       }
-
-      .cta a {
+      .photo-column {
         width: 90%;
-        text-align: center;
+        order: 2;
+      }
+      .content {
+        width: 95%;
       }
     }
   </style>
@@ -149,44 +168,58 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section>
-    <h2>Ways You Can Join the Campaign</h2>
-
-    <div class="option">
-      <h3>🚪 Volunteer</h3>
-      <p>From door-knocking and phone banking to data entry and event setup — we’ve got a place for you. No experience needed — just energy, heart, and commitment to Ward 8.</p>
+  <div class="main-container">
+    <div class="photo-column">
+      <img src="photo1.jpg" alt="Campaigning with volunteers" />
+      <img src="photo2.jpg" alt="Meeting with residents" />
+      <img src="photo3.jpg" alt="Alex in the community" />
     </div>
 
-    <div class="option">
-      <h3>📬 Request a Lawn Sign</h3>
-      <p>Let your neighbours know you support a people-powered campaign! We’ll drop one off when signs are released closer to voting day.</p>
+    <div class="content">
+      <h2>Ways You Can Join the Campaign</h2>
+
+      <div class="option">
+        <h3>🚪 Volunteer</h3>
+        <p>From door-knocking and phone banking to data entry and event setup — we’ve got a place for you. No experience needed — just energy, heart, and commitment to Ward 8.</p>
+      </div>
+
+      <div class="option">
+        <h3>📬 Request a Lawn Sign</h3>
+        <p>Let your neighbours know you support a people-powered campaign! We’ll drop one off when signs are released closer to voting day.</p>
+      </div>
+
+      <div class="option">
+        <h3>🏠 Host a Community Chat</h3>
+        <p>Bring friends, neighbours, or family together to meet Alex and talk about local priorities. We’ll bring materials and answers — you provide the space and company.</p>
+      </div>
+
+      <div class="option">
+        <h3>💸 Donate (Coming Soon)</h3>
+        <p>Help us print flyers, run outreach, and mobilize volunteers. Every dollar goes directly to reaching voters and changing the conversation at City Hall.</p>
+      </div>
+
+      <div class="option">
+        <h3>📣 Spread the Word</h3>
+        <p>Share our posts, talk to your neighbours, or invite a friend to volunteer. Grassroots change happens one conversation at a time.</p>
+      </div>
+
+      <div class="option">
+        <h3>📝 Policy Feedback</h3>
+        <p>Your voice matters. If you have ideas for Ward 8 or want to co-develop policy proposals, email us or drop into one of our town halls.</p>
+      </div>
+
+      <div class="cta">
+        <a href="contact.html">Contact the Campaign</a>
+        <a href="https://forms.gle/example-form">Sign Up to Volunteer</a>
+      </div>
     </div>
 
-    <div class="option">
-      <h3>🏠 Host a Community Chat</h3>
-      <p>Bring friends, neighbours, or family together to meet Alex and talk about local priorities. We’ll bring materials and answers — you provide the space and company.</p>
+    <div class="photo-column">
+      <img src="photo4.jpg" alt="Alex speaking at rally" />
+      <img src="photo5.jpg" alt="Team prepping signs" />
+      <img src="photo6.jpg" alt="Canvassing with residents" />
     </div>
-
-    <div class="option">
-      <h3>💸 Donate (Coming Soon)</h3>
-      <p>Help us print flyers, run outreach, and mobilize volunteers. Every dollar goes directly to reaching voters and changing the conversation at City Hall.</p>
-    </div>
-
-    <div class="option">
-      <h3>📣 Spread the Word</h3>
-      <p>Share our posts, talk to your neighbours, or invite a friend to volunteer. Grassroots change happens one conversation at a time.</p>
-    </div>
-
-    <div class="option">
-      <h3>📝 Policy Feedback</h3>
-      <p>Your voice matters. If you have ideas for Ward 8 or want to co-develop policy proposals, email us or drop into one of our town halls.</p>
-    </div>
-
-    <div class="cta">
-      <a href="contact.html">Contact the Campaign</a>
-      <a href="https://forms.gle/example-form">Sign Up to Volunteer</a>
-    </div>
-  </section>
+  </div>
 
   <footer>
     <p>Authorized by</p>
