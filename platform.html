@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alex Ballagh for Ward 8</title>
   <style>
-    /* Base styles */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
@@ -20,36 +19,36 @@
       padding: 2rem 1rem;
       text-align: center;
     }
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-header p {
-  font-size: 1.25rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
-.cta {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-.cta a {
-  padding: 0.75rem 1.5rem;
-  background-color: #fff;
-  color: #e04e39;
-  border: 2px solid #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-.cta a:hover {
-  background-color: #f4f4f4;
-  transform: scale(1.03);
-}
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+    .cta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .cta a {
+      padding: 0.75rem 1.5rem;
+      background-color: #fff;
+      color: #e04e39;
+      border: 2px solid #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .cta a:hover {
+      background-color: #f4f4f4;
+      transform: scale(1.03);
+    }
 
     nav {
       background-color: #333;
@@ -75,14 +74,38 @@ header p {
       background-color: #555;
       outline: none;
     }
-    main {
-      max-width: 900px;
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       margin: 2rem auto 4rem;
+      max-width: 1400px;
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+
+    .photo-column {
+      width: 30%;
+      padding: 1rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .photo-column img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .content {
+      width: 100%;
       background: #fff;
       border-radius: 12px;
       padding: 2.5rem 3rem;
       box-shadow: 0 6px 14px rgb(0 0 0 / 0.1);
     }
+
     h2 {
       color: #e04e39;
       margin-bottom: 1rem;
@@ -90,10 +113,12 @@ header p {
       border-bottom: 3px solid #ff7043;
       padding-bottom: 0.3rem;
     }
+
     ul {
       list-style: none;
       padding-left: 0;
     }
+
     ul li {
       margin-bottom: 1.25rem;
       font-size: 1.1rem;
@@ -101,13 +126,14 @@ header p {
       position: relative;
       line-height: 1.4;
     }
+
     ul li strong {
       display: block;
       font-size: 1.2rem;
       color: #cc3b25;
       margin-bottom: 0.3rem;
     }
-    /* Emoji style */
+
     ul li::before {
       content: attr(data-emoji);
       position: absolute;
@@ -116,12 +142,14 @@ header p {
       font-size: 1.7rem;
       line-height: 1;
     }
+
     p.lead {
       font-weight: 600;
       font-size: 1.2rem;
       margin-bottom: 1.5rem;
       color: #444;
     }
+
     p.strong {
       font-weight: 700;
       font-size: 1.15rem;
@@ -129,6 +157,7 @@ header p {
       color: #2f2f2f;
       text-align: center;
     }
+
     footer {
       background-color: #333;
       color: #fff;
@@ -137,15 +166,27 @@ header p {
       font-size: 0.9rem;
       box-shadow: 0 -2px 6px rgb(0 0 0 / 0.25);
     }
+
+    @media (max-width: 1024px) {
+      .main-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .photo-column {
+        width: 90%;
+        order: 2;
+      }
+      .content {
+        width: 95%;
+      }
+    }
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 2.2rem;
       }
       header p {
         font-size: 1rem;
-      }
-      main {
-        padding: 2rem 1.5rem;
       }
       nav a {
         padding: 0.8rem 1rem;
@@ -155,14 +196,14 @@ header p {
   </style>
 </head>
 <body>
-<header>
-  <h1>Alex Ballagh for Ward 8</h1>
-  <p>Building a Stronger, Fairer Hamilton — Together.</p>
-  <div class="cta">
-    <a href="index.html">← Back to Home</a>
-    <a href="involve.html">Join the Campaign</a>
-  </div>
-</header>
+  <header>
+    <h1>Alex Ballagh for Ward 8</h1>
+    <p>Building a Stronger, Fairer Hamilton — Together.</p>
+    <div class="cta">
+      <a href="index.html">← Back to Home</a>
+      <a href="involve.html">Join the Campaign</a>
+    </div>
+  </header>
 
   <nav>
     <a href="index.html">Home</a>
@@ -173,68 +214,71 @@ header p {
     <a href="contact.html">Contact</a>
   </nav>
 
- <main>
-  <h2>My Vision for Ward 8</h2>
-  <p class="lead">
-    Together, we can build a Ward 8 where everyone feels safe, valued, and at home — whether you’re a homeowner, student, family, or newcomer.
-  </p>
+  <div class="main-container">
+    <div class="photo-column">
+      <img src="vision1.jpg" alt="Alex listening to residents" />
+      <img src="vision2.jpg" alt="Alex at city council" />
+      <img src="vision3.jpg" alt="Alex with community members" />
+    </div>
 
-  <ul>
-     <li data-emoji="🏘️">
-      <strong>Affordable Housing & Inclusive Growth</strong>
-      Supporting gentle density solutions like duplexes and townhomes, protecting existing affordable units, and partnering with organizations to make housing attainable without displacing families or changing our neighbourhood’s character.
-    </li> 
-    <li data-emoji="🏠">
-      <strong>Vacant Property Tax & Tenant Protections</strong>
-      Advocating for a vacant property tax to discourage speculation and empty homes, and pushing for a maximum heat bylaw to ensure tenants have safe, comfortable housing year-round.
-    </li>
-  <li data-emoji="📣">
-      <strong>A Councillor Who Listens & Acts</strong>
-      Committing to regular town halls, transparent sharing of council votes, and empowering residents to shape budget priorities through participatory tools.
-    </li>
-   <li data-emoji="🚇">
-      <strong>Transit & LRT Readiness</strong>
-      Advocating for better bus routes, increased weekend service, and public education so Ward 8 residents can confidently connect with the upcoming LRT and reduce car dependency.
-    <li data-emoji="🚘">
-      <strong>Road Safety & Traffic Calming</strong>
-      Tackling speeding and truck traffic in residential areas with expanded speed humps, traffic-calming zones, and improved intersections like Claremont Access to protect families and seniors.
-    </li>
-   </li> <li data-emoji="🏗️">
-      <strong>Aging Infrastructure & Safer Streets</strong>
-      Championing complete-streets upgrades with sidewalks, bike lanes, and accessibility improvements on Upper James, Fennell, and Rymal Road — because safer, walkable neighbourhoods improve quality of life for all ages.
-    </li>
-    <li data-emoji="🤝">
-      <strong>Stronger Union Protections & Workers’ Rights</strong>
-      Supporting local unions and workers by fighting for fair wages, safe workplaces, and the right to organize — building a stronger economy that works for all.
-    </li>
-    <li data-emoji="🚨">
-      <strong>Community Safety & Stronger Partnerships</strong>
-      Working closely with Hamilton Police and community organizations to reduce crime, increase community engagement, and support intervention programs that keep our neighbourhoods safe and welcoming.
-    </li>
-    <li data-emoji="🌍">
-      <strong>Climate Action & Green Initiatives</strong>
-      Fighting for expanded tree planting, city fleet electrification, and green development policies that make Ward 8 a leader in sustainability and resilience.
-    </li>
-  <li data-emoji="🌳">
-      <strong>Parks, Trails & Recreation for All</strong>
-      Ensuring equitable access to splash pads, trail connectivity along the mountain brow, and safe, accessible green spaces where kids, families, and seniors can gather and thrive.
-  </li>
- <li data-emoji="🎭">
-      <strong>Arts, Music & Culture</strong>
-      Backing local artists, music festivals, and grassroots cultural groups with sustainable funding, inclusive event spaces, and ward-level arts grants that reflect the vibrancy of our communities.
-    </li>
-    <li data-emoji="🏥">
-      <strong>Healthcare Supports & Education Resources</strong>
-      Championing better local healthcare access, mental health supports, and educational programs that empower families, youth, and seniors to thrive.
-    </li>
-  </ul>
+    <main class="content">
+      <h2>My Vision for Ward 8</h2>
+      <p class="lead">
+        Together, we can build a Ward 8 where everyone feels safe, valued, and at home — whether you’re a homeowner, student, family, or newcomer.
+      </p>
 
-  <p class="strong">This campaign is about YOU, the people who call Ward 8 home. Let’s build a Hamilton that’s safer, greener, and more welcoming for everyone.</p>
+      <ul>
+        <li data-emoji="🏘️"><strong>Affordable Housing & Inclusive Growth</strong>
+          Supporting gentle density solutions like duplexes and townhomes, protecting existing affordable units, and partnering with organizations to make housing attainable without displacing families or changing our neighbourhood’s character.
+        </li>
+        <li data-emoji="🏠"><strong>Vacant Property Tax & Tenant Protections</strong>
+          Advocating for a vacant property tax to discourage speculation and empty homes, and pushing for a maximum heat bylaw to ensure tenants have safe, comfortable housing year-round.
+        </li>
+        <li data-emoji="📣"><strong>A Councillor Who Listens & Acts</strong>
+          Committing to regular town halls, transparent sharing of council votes, and empowering residents to shape budget priorities through participatory tools.
+        </li>
+        <li data-emoji="🚇"><strong>Transit & LRT Readiness</strong>
+          Advocating for better bus routes, increased weekend service, and public education so Ward 8 residents can confidently connect with the upcoming LRT and reduce car dependency.
+        </li>
+        <li data-emoji="🚘"><strong>Road Safety & Traffic Calming</strong>
+          Tackling speeding and truck traffic in residential areas with expanded speed humps, traffic-calming zones, and improved intersections like Claremont Access to protect families and seniors.
+        </li>
+        <li data-emoji="🏗️"><strong>Aging Infrastructure & Safer Streets</strong>
+          Championing complete-streets upgrades with sidewalks, bike lanes, and accessibility improvements on Upper James, Fennell, and Rymal Road — because safer, walkable neighbourhoods improve quality of life for all ages.
+        </li>
+        <li data-emoji="🤝"><strong>Stronger Union Protections & Workers’ Rights</strong>
+          Supporting local unions and workers by fighting for fair wages, safe workplaces, and the right to organize — building a stronger economy that works for all.
+        </li>
+        <li data-emoji="🚨"><strong>Community Safety & Stronger Partnerships</strong>
+          Working closely with Hamilton Police and community organizations to reduce crime, increase community engagement, and support intervention programs that keep our neighbourhoods safe and welcoming.
+        </li>
+        <li data-emoji="🌍"><strong>Climate Action & Green Initiatives</strong>
+          Fighting for expanded tree planting, city fleet electrification, and green development policies that make Ward 8 a leader in sustainability and resilience.
+        </li>
+        <li data-emoji="🌳"><strong>Parks, Trails & Recreation for All</strong>
+          Ensuring equitable access to splash pads, trail connectivity along the mountain brow, and safe, accessible green spaces where kids, families, and seniors can gather and thrive.
+        </li>
+        <li data-emoji="🎭"><strong>Arts, Music & Culture</strong>
+          Backing local artists, music festivals, and grassroots cultural groups with sustainable funding, inclusive event spaces, and ward-level arts grants that reflect the vibrancy of our communities.
+        </li>
+        <li data-emoji="🏥"><strong>Healthcare Supports & Education Resources</strong>
+          Championing better local healthcare access, mental health supports, and educational programs that empower families, youth, and seniors to thrive.
+        </li>
+      </ul>
 
-  <div class="cta" style="margin-top: 2rem;">
-    <a href="Policy.Explaination.html">📘 Read the Full Policy Breakdown</a>
+      <p class="strong">This campaign is about YOU, the people who call Ward 8 home. Let’s build a Hamilton that’s safer, greener, and more welcoming for everyone.</p>
+
+      <div class="cta" style="margin-top: 2rem;">
+        <a href="Policy.Explaination.html">📘 Read the Full Policy Breakdown</a>
+      </div>
+    </main>
+
+    <div class="photo-column">
+      <img src="vision4.jpg" alt="Alex knocking doors" />
+      <img src="vision5.jpg" alt="Alex with youth organizers" />
+      <img src="vision6.jpg" alt="Alex advocating at rally" />
+    </div>
   </div>
-</main>
 
   <footer>
     <p>Authorized by</p>
