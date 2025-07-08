@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Ballagh for Ward 8</title>
   <style>
     * {
@@ -10,10 +10,12 @@
       padding: 0;
       box-sizing: border-box;
     }
-
+p {
+  margin-bottom: 1.25rem;
+}
     body {
       font-family: 'Open Sans', sans-serif;
-      background: #f4f4f4;
+      background: linear-gradient(to bottom, #e04e39 0%, #f4f4f4 25%);
       color: #333;
       line-height: 1.6;
     }
@@ -23,17 +25,6 @@
       color: #fff;
       padding: 2rem 1rem;
       text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.25rem;
-      font-weight: 300;
-      margin-bottom: 1rem;
     }
 
     nav {
@@ -64,8 +55,8 @@
 
     .cta a {
       padding: 0.75rem 1.5rem;
-      background-color: #fff;
-      color: #e04e39;
+      background-color: #e04e39;
+      color: white;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
@@ -73,46 +64,52 @@
     }
 
     .cta a:hover {
-      background-color: #f4f4f4;
+      background-color: #c43f2c;
       transform: scale(1.03);
     }
 
-    .main-container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
+    section {
+      max-width: 1000px;
       margin: 2rem auto;
-      max-width: 1400px;
-      gap: 2rem;
-    }
-
-    .photo-column {
-      width: 30%;
-      padding: 1rem 0;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .photo-column img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .content {
-      width: 100%;
-      background: #fff;
       padding: 2rem;
+      background: #fff;
       border-radius: 8px;
     }
 
     h2 {
       color: #e04e39;
+      margin-bottom: 1rem;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
       margin-top: 2rem;
     }
 
-    ul {
-      padding-left: 1.5rem;
+    .image-row img {
+      width: 30%;
+      border-radius: 8px;
+    }
+
+    .intro-image {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .intro-image img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .intro-image p {
+      flex: 1;
     }
 
     footer {
@@ -123,34 +120,40 @@
       margin-top: 2rem;
     }
 
-    @media (max-width: 1024px) {
-      .main-container {
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .image-row img,
+      .intro-image img {
+        width: 100%;
+      }
+
+      nav {
         flex-direction: column;
         align-items: center;
       }
-      .photo-column {
+
+      .cta a {
         width: 90%;
-        order: 2;
-      }
-      .content {
-        width: 95%;
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Alex Ballagh for Ward 8</h1>
-    <p>Building a Stronger, Fairer Hamilton, Together.</p>
-    <div class="cta">
-      <a href="platform.html">Explore the Platform</a>
-      <a href="involve.html">Join the Campaign</a>
-    </div>
-  </header>
+  <h1>Alex Ballagh for Ward 8</h1>
+  <p>Building a Stronger, Fairer Hamilton — Together.</p>
+  <div class="cta">
+    <a href="platform.html">Read the Platform</a>
+    <a href="involve.html">Join the Campaign</a>
+  </div>
+</header>
 
   <nav>
-    <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="platform.html">Platform</a>
     <a href="community.html">Community Work</a>
@@ -159,104 +162,52 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="main-container">
-    <div class="photo-column">
-      <img src="Alex ACORN Emerald 2.jpg" alt="Alex at ACORN" />
-      <img src="Alex Repair Cafe.jpg" alt="Alex at Repair Café" />
-      <img src="Alex unionizes Bold.jpg" alt="Alex organizing workers" />
-          <img src="Alex at Greenbelt.JPG" alt="Alex with supporters" />
-      <img src="Alex CoChair.jpg" alt="Alex co-chairing ACORN" />
-      <img src="Alex at Marathon.jpg" alt="Alex at community event" />
-      <img src="Alex at Greenbelt.JPG" alt="Alex with supporters" />
-        <img src="Pic w Monique and Pal.jpg" alt="Alex with supporters" />
-    </div>
-
-    <div class="content">
-      <section>
-        <h2>Community Leadership</h2>
-        <p>My campaign is powered by years of experience leading grassroots action in Ward 8 and across Hamilton: from housing justice and union rights to climate action and democratic reform. Here's some of what I’ve built and fought for:</p>
-      </section>
-
-      <section>
-  <h2>🏘️ Housing & Tenant Advocacy</h2>
-  <ul>
-    <li>Elected <b>Co-Chair of Hamilton ACORN</b> Downtown Chapter</li>
-    <li>Led passage of <b>Ontario’s first Anti-Renoviction and Anti-Demoviction Bylaws</b>, which have since been adopted in other municipalities; including Toronto and Kitchener-Waterloo</li>
-    <li>Organized Tenant Unions and Delegated to Council at City Hall to demand improvements to housing conditions</li>
-    <li><b>Site Selection Committee Member</b> and <b>Fundraising Organizer</b> with the <b>Hamilton Alliance for Tiny Shelters</b> (HATS)</li>
-    <li>Spearheaded campaigns for a <b>Maximum Heat Bylaw</b> and a <b>Fight Against Predatory Bank Fees</b> (NSF Fees) for low and middle income Canadians</li>
-  </ul>
-</section>
-
-
-     <section>
-  <h2>✊ Labour, Health & Public Services</h2>
-  <ul>
-    <li>Avid supporter of the <b>Hamilton District Labour Council</b> (HDLC), <b>Workers Arts and Heritage Centre</b> (WAHC), and a proud member of <b>Unifor Unit 1, Local 5555</b></li>
-    <li>Founding <b>National Program Coordinator</b> for the <b>National Overdose Response Service (NORS) - Peer Wellness Program</b></li>
-    <li><b>Seminar Trainer</b> for NORS and the Substance Overdose Prevention and Education Network (SOPEN) naloxone workshops across the Greater Toronto-Hamilton Area</li>
-    <li>Organizer with <b>FairVote Canada</b>, fighting to protect democratic election integrity and freedom of choice for voters</li>
-    <li><b>Delegate to the Legislature and Organizer</b> with the <b>Ontario Health Coalition</b>, advocating for public healthcare justice and adequate funding</li>
-    <li>Consistently supports unionized workers in all sectors, dedicated in solidarity with the <b>HDLC</b>, and active advocate for stronger workplace protections</li>
-    <li>Active member of the <b>Hamilton Health Coalition</b>, <b>Ontario Health Coalition</b>, and <b>St. Joe’s Hospital</b> volunteer</li>
-  </ul>
-</section>
-
-    <section>
-  <h2>📣 Political Organizing & Reform</h2>
-  <ul>
-    <li><b>Chair of Federal Election Planning Committee</b> for grassroots candidates</li>
-    <li>Delegate for <b>FairVote Canada</b>, promoting electoral reform and proportional representation</li>
-    <li>Wrote national engagement toolkits for the grassroots political campaigns and trained volunteers across Canada</li>
-    <li>Helped democratize local riding associations and increase youth, newcomer, and equity participation</li>
-  </ul>
-</section>
-
-    <section>
-  <h2>🎓 Student & Youth Leadership</h2>
-  <ul>
-    <li><b>Vice President</b> of the <b>McMaster Graduate Student Association</b> (GSA), serving as a <b>Fiduciary</b> on the <b>Board of Directors</b></li>
-    <li>Reinstated and expanded mental health coverage for all students: Founding the <b>Empower Me</b> program</li>
-    <li><b>Founded the GSA Clubs Committee</b> to support student engagement and community building</li>
-    <li>Oversaw intramural sports and student leagues to strengthen campus life and wellness</li>
-  </ul>
-</section>
-<section>
-  <h2>🎶 Arts & Culture Advocacy</h2>
-  <ul>
-    <li><b>Sole Organizer</b> of the 500-person <b>“Here’s to Hamilton” Concert Fundraiser</b> featuring <b>LTtheMonk</b> and Juno-winner <b>Harrison Kennedy</b></li>
-    <li><b>Volunteer organizer</b> with <b>Black Throne Productions</b>, supporting local metal music and coordinating <b>La Rhune Doomfest</b> two years in a row</li>
-    <li>Active supporter of <b>Hamilton’s Hip-Hop</b> scene and <b>Latin dance</b> events, helping grow grassroots cultural communities across the city</li>
-    <li>Advocates for accessible, inclusive, and well-funded spaces for local artists and performers in Ward 8 and beyond</li>
-  </ul>
-</section>
-
-      <section>
-        <h2>🌿 Local Climate & Justice Work</h2>
-        <ul>
-          <li><b>Organized city-wide campaigns</b> against renoviction, led climate justice protests, and rallied at sustainable development actions, including protecting the <b>Greenbelt</b></li>
-          <li><b>Volunteer</b> with <b>Pride Hamilton</b> supporting LGBTQ+ communities and actions across Ontario</li>
-          <li><b>YWCA Gala Speaker Coordinator</b> and <b>Photographer</b> </li>
-        </ul>
-      </section>
-    </div>
-
-    <div class="photo-column">
-      <img src="Alex Friendly.jpg" alt="Alex smiling with community" />
-      <img src="Alex Leading ACORN Protest.jpg" alt="Alex leading protest" />
-      <img src="Alex marching w union.JPG" alt="Alex marching with union" />
-      <img src="Alex at Pride.JPG" alt="Alex at Pride Hamilton" />
-      <img src="Grocery Greed.JPG" alt="Alex protesting grocery greed" />
-      <img src="picket with CUPE.jpg" alt="Alex supporting CUPE" />
-      <img src="OHCLegislativeDelegation.jpg" alt="Alex supporting CUPE" />
-      <img src="Alex Scientist.JPG" alt="Alex supporting CUPE" />
-    </div>
+  <div class="image-row">
+    <img src="448871240_486967677051748_1370570062557064044_n.jpg" alt="Alex with community members" />
+    <img src="IMG_4019.JPG" alt="Alex with Flag" />
+    <img src="IMG_4237.JPG"/>
   </div>
 
+<section>
+  <h2>Welcome to the Campaign for a Better Ward 8</h2>
+  <p>I'm Alex Ballagh — a Proud Hamiltonian, Community Organizer, and National Program Coordinator. I’ve spent years on the frontlines of housing, health, and democratic reform: elected as <b>Co-Chair of Hamilton ACORN</b> to fight for tenant rights and community solidarity; serving as <b>National Program Coordinator</b> for the Peer Wellness Program at the <b>National Overdose Response Service</b> (NORS) to build a nationwide support network for those most in need; and meeting MPPs as a <b>Legislative Delegate of the Hamilton Health Coalition</b> fighting for better healthcare and fairer wages for our lifesaving healthcare workers.</p>
+ <p>Even during my 2018 Masters thesis, I was elected <b>Vice President of the Graduate Student Association of McMaster University</b> where I successfully reestablished and expanded mental healthcare services to all students after the university had cancelled it as a cost-saving measure. I also founded the McMaster Graduate Clubs branch of the GSA offering students the opportunity to foster communities of hobbyists, activists, and social clubs to expand their engagement and graduate experience.</p>
+
+  <div class="intro-image">
+    <img src="IMG_5029mod.JPG" alt="Alex speaking at an event" />
+    <p>Hamilton is a city of strength, diversity, and resilience, but too many of us are being left behind. Whether it's skyrocketing rents, inaccessible transit, crumbling infrastructure, or closed-door decision-making at City Hall, people in Ward 8 are ready for change. <u>And so am I</u>.</p>
+  </div>
+
+  <p>Outside of my research and instructional work at McMaster University, I spend my off hours training communities in overdose prevention as a <b>SOPEN Naloxone Workshop Facilitator</b>, organizing as a <b>Delegate for FairVote Canada</b>, and advocating for public healthcare as an <b>Organizer and Delegate to the Ontario Health Coalition</b>, serving on the <b>Site Selection Committee</b> and <b>Fundraising Event Planning Team</b> for the <b>Hamilton Alliance for Tiny Shelters</b> (HATS).</p>
+<p></p>
+  <p>This campaign isn’t about politics as usual. It’s about people. It’s about building a city where every neighbour is heard, where affordability and climate action are priorities, not afterthoughts, and where we fight for justice, not just promises.</p>
+  <p>Join us as we knock on doors, build connections, and bring hope and action to every street, every building, and every household in Ward 8. Together, we can reshape Hamilton's future — and it starts right here, with you.</p>
+
+  <div class="image-row">
+    <img src="IMG_4115.JPG" alt="Alex door knocking" />
+    <img src="IMG_4061.JPG" alt="Alex with community" />
+     <img src="OHCProtestSolidarity.JPG" alt="Alex at a town hall" />
+  </div>
+
+  <div class="cta">
+    <a href="platform.html">Explore the Platform</a>
+    <a href="involve.html">Join the Movement</a>
+  </div>
+</section>
+<section>
+    <h2>Key Election Dates</h2>
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="margin-bottom: 1rem;">
+        <strong style="color: #e04e39;">Advance Voting:</strong> September 20 & 21, 2025
+      </li>
+      <li style="margin-bottom: 1rem;">
+        <strong style="color: #e04e39;">Election Day:</strong> September 22, 2025
+      </li>
+    </ul>
+  </section>
   <footer>
     <p>Authorized by</p>
     <p>2025 Alex Ballagh for Ward 8</p>
   </footer>
-
 </body>
 </html>
