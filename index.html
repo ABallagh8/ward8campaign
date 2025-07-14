@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Ballagh for Ward 8</title>
+  <script 
+  src="https://www.paypal.com/sdk/js?client-id=BAABvZjy6oO9Sttqe6K4WCAMEYelMbxwoE6X3vwPvgX1qSqEtcOnmb7nyYWnlzrUIm5Q2mw8lYQ5LYrmxE&components=hosted-buttons&disable-funding=venmo&currency=CAD">
+</script>
   <style>
     * {
       margin: 0;
@@ -24,34 +27,22 @@ p {
     top: 60px;
     left: 60px;
     z-index: 1000;
+    background-color: #FF5722;
+    padding: 24px 32px;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
   }
 
-  .donate-button a {
-    background-color: #FF5722; /* Bright standout orange */
-    color: white;
-    padding: 20px 32px;
-    border-radius: 14px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.4rem;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-
-  .donate-button a:hover {
-    background-color: #e64a19;
+  .donate-button:hover {
     transform: scale(1.05);
   }
 
   @media (max-width: 600px) {
     .donate-button {
-      top: 30px;
+      top: 20px;
       left: 20px;
-    }
-
-    .donate-button a {
-      padding: 14px 22px;
-      font-size: 1.1rem;
+      padding: 16px 20px;
     }
   }
     header {
@@ -178,18 +169,17 @@ p {
   </style>
 </head>
 <body>
-  <div class="donate-button">
-  <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID" target="_blank">
-    Donate Now!
-  </a>
+ <!-- PayPal Donate Button Container -->
+<div class="donate-button">
+  <div id="paypal-container-JZDPUT2BXGBKS"></div>
 </div>
-  <header>
-  <h1>Alex Ballagh for Ward 8</h1>
-  <p>Building a Stronger, Fairer Hamilton — Together.</p>
-  <div class="cta">
-    <a href="platform.html">Read the Platform</a>
-    <a href="involve.html">Join the Campaign</a>
-  </div>
+
+<!-- PayPal Render Script -->
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "JZDPUT2BXGBKS",
+  }).render("#paypal-container-JZDPUT2BXGBKS");
+</script>
 </header>
 
   <nav>
