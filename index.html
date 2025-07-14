@@ -19,7 +19,27 @@ p {
       color: #333;
       line-height: 1.6;
     }
+  .donate-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
 
+  .donate-button a {
+    background-color: #0070ba; /* PayPal blue */
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+  }
+
+  .donate-button a:hover {
+    background-color: #005c99;
+  }
     header {
       background: #e04e39;
       color: #fff;
@@ -144,6 +164,11 @@ p {
   </style>
 </head>
 <body>
+  <div class="donate-button">
+  <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID" target="_blank">
+    Donate Now!
+  </a>
+</div>
   <header>
   <h1>Alex Ballagh for Ward 8</h1>
   <p>Building a Stronger, Fairer Hamilton — Together.</p>
