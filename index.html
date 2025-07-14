@@ -4,23 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Ballagh for Ward 8</title>
- 
+
+  <!-- PayPal SDK Script -->
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAABvZjy6oO9Sttqe6K4WCAMEYelMbxwoE6X3vwPvgX1qSqEtcOnmb7nyYWnlzrUIm5Q2mw8lYQ5LYrmxE&components=hosted-buttons&disable-funding=venmo&currency=CAD">
+  </script>
+
+  <!-- Donate Button Styling -->
   <style>
+    .donate-button {
+      position: fixed;
+      top: 60px;
+      left: 60px;
+      z-index: 1000;
+      background-color: #FF5722;
+      padding: 24px 32px;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .donate-button:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .donate-button {
+        top: 20px;
+        left: 20px;
+        padding: 16px 20px;
+      }
+    }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-p {
-  margin-bottom: 1.25rem;
-}
+
+    p {
+      margin-bottom: 1.25rem;
+    }
+
     body {
       font-family: 'Open Sans', sans-serif;
       background: linear-gradient(to bottom, #e04e39 0%, #f4f4f4 25%);
       color: #333;
       line-height: 1.6;
     }
- 
+
     header {
       background: #e04e39;
       color: #fff;
@@ -121,7 +153,6 @@ p {
       margin-top: 2rem;
     }
 
-    /* Responsive tweaks */
     @media (max-width: 768px) {
       header h1 {
         font-size: 2rem;
@@ -146,7 +177,16 @@ p {
 </head>
 <body>
 
-</header>
+  <!-- DONATE BUTTON -->
+  <div class="donate-button">
+    <div id="paypal-container-JZDPUT2BXGBKS"></div>
+  </div>
+
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "JZDPUT2BXGBKS",
+    }).render("#paypal-container-JZDPUT2BXGBKS");
+  </script>
 
   <nav>
     <a href="about.html">About</a>
@@ -158,38 +198,38 @@ p {
   </nav>
 
   <div class="image-row">
-      <img src="IMG_4237.JPG"/>
+    <img src="IMG_4237.JPG" />
     <img src="448871240_486967677051748_1370570062557064044_n.jpg" alt="Alex with community members" />
-      <img src="IMG_4019.JPG" alt="Alex with Flag" />
+    <img src="IMG_4019.JPG" alt="Alex with Flag" />
   </div>
 
-<section>
-  <h2>Welcome to the Campaign for a Better Ward 8</h2>
-  <p>I'm Alex Ballagh — a Proud Hamiltonian, Community Organizer, and National Program Coordinator. I’ve spent years on the frontlines of housing, health, and democratic reform: elected as <b>Co-Chair of Hamilton ACORN</b> to fight for tenant rights and community solidarity; serving as <b>National Program Coordinator</b> for the Peer Wellness Program at the <b>National Overdose Response Service</b> (NORS) to build a nationwide support network for those most in need; and meeting MPPs as a <b>Legislative Delegate of the Hamilton Health Coalition</b> fighting for better healthcare and fairer wages for our lifesaving healthcare workers.</p>
- <p>Even during my 2018 Masters thesis, I was elected <b>Vice President of the Graduate Student Association of McMaster University</b> where I successfully reestablished and expanded mental healthcare services to all students after the university had cancelled it as a cost-saving measure. I also founded the McMaster Graduate Clubs branch of the GSA offering students the opportunity to foster communities of hobbyists, activists, and social clubs to expand their engagement and graduate experience.</p>
+  <section>
+    <h2>Welcome to the Campaign for a Better Ward 8</h2>
+    <p>I'm Alex Ballagh — a Proud Hamiltonian, Community Organizer, and National Program Coordinator...</p>
+    <p>Even during my 2018 Masters thesis, I was elected <b>Vice President...</b></p>
 
-  <div class="intro-image">
-    <img src="IMG_5029mod.JPG" alt="Alex speaking at an event" />
-    <p>Hamilton is a city of strength, diversity, and resilience, but too many of us are being left behind. Whether it's skyrocketing rents, inaccessible transit, crumbling infrastructure, or closed-door decision-making at City Hall, people in Ward 8 are ready for change. <u>And so am I</u>.</p>
-  </div>
+    <div class="intro-image">
+      <img src="IMG_5029mod.JPG" alt="Alex speaking at an event" />
+      <p>Hamilton is a city of strength, diversity, and resilience...</p>
+    </div>
 
-  <p>Outside of my research and instructional work at McMaster University, I spend my off hours training communities in overdose prevention as a <b>SOPEN Naloxone Workshop Facilitator</b>, organizing as a <b>Delegate for FairVote Canada</b>, and advocating for public healthcare as an <b>Organizer and Delegate to the Ontario Health Coalition</b>, serving on the <b>Site Selection Committee</b> and <b>Fundraising Event Planning Team</b> for the <b>Hamilton Alliance for Tiny Shelters</b> (HATS).</p>
-<p></p>
-  <p>This campaign isn’t about politics as usual. It’s about people. It’s about building a city where every neighbour is heard, where affordability and climate action are priorities, not afterthoughts, and where we fight for justice, not just promises.</p>
-  <p>Join us as we knock on doors, build connections, and bring hope and action to every street, every building, and every household in Ward 8. Together, we can reshape Hamilton's future — and it starts right here, with you.</p>
+    <p>Outside of my research and instructional work at McMaster University...</p>
+    <p>This campaign isn’t about politics as usual. It’s about people...</p>
+    <p>Join us as we knock on doors, build connections...</p>
 
-  <div class="image-row">
-    <img src="IMG_4115.JPG" alt="Alex door knocking" />
-    <img src="IMG_4061.JPG" alt="Alex with community" />
-     <img src="OHCProtestSolidaritycropped2.jpg" alt="Alex at a town hall" />
-  </div>
+    <div class="image-row">
+      <img src="IMG_4115.JPG" alt="Alex door knocking" />
+      <img src="IMG_4061.JPG" alt="Alex with community" />
+      <img src="OHCProtestSolidaritycropped2.jpg" alt="Alex at a town hall" />
+    </div>
 
-  <div class="cta">
-    <a href="platform.html">Explore the Platform</a>
-    <a href="involve.html">Join the Movement</a>
-  </div>
-</section>
-<section>
+    <div class="cta">
+      <a href="platform.html">Explore the Platform</a>
+      <a href="involve.html">Join the Movement</a>
+    </div>
+  </section>
+
+  <section>
     <h2>Key Election Dates</h2>
     <ul style="list-style-type: none; padding: 0;">
       <li style="margin-bottom: 1rem;">
@@ -200,9 +240,11 @@ p {
       </li>
     </ul>
   </section>
+
   <footer>
     <p>Authorized by</p>
     <p>2025 Alex Ballagh for Ward 8</p>
   </footer>
+
 </body>
 </html>
