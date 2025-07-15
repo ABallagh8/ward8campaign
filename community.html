@@ -1,367 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta + Title -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alex Ballagh for Ward 8</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Work • Alex Ballagh for Ward 8</title>
+
+  <!-- Shared Stylesheet or Inline CSS -->
+  <!-- Include your main CSS from index.html here, including nav, header, section styling -->
+
+  <!-- Share Box Styles -->
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
+    .share-box {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #fff;
+      border: 2px solid #e04e39;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 9999;
+      max-width: 260px;
       font-family: 'Open Sans', sans-serif;
-      background: #f4f4f4;
+      font-size: 0.9rem;
+    }
+    .share-box p {
+      margin-bottom: 0.5rem;
       color: #333;
-      line-height: 1.6;
     }
-
-        .donate-button {
-    position: fixed;
-    top: 60px;
-    left: 60px;
-    z-index: 1000;
-  }
-
-  .donate-button a {
-    background-color: #FF5722; /* Bright standout orange */
-    color: white;
-    padding: 20px 32px;
-    border-radius: 14px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.4rem;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-
-  .donate-button a:hover {
-    background-color: #e64a19;
-    transform: scale(1.05);
-  }
-
-  @media (max-width: 600px) {
-    .donate-button {
-      top: 30px;
-      left: 20px;
-    }
-
-    .donate-button a {
-      padding: 14px 22px;
-      font-size: 1.1rem;
-    }
-
-    
-.share-box {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #ffffff;
-  border: 2px solid #e04e39;
-  padding: 1rem 1.25rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  z-index: 999;
-  max-width: 280px;
-  font-size: 0.95rem;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.share-box p {
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.share-box .share-buttons {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.share-box .share-buttons a {
-  background-color: #e04e39;
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.share-box .share-buttons a:hover {
-  background-color: #c43f2c;
-}
-
-.share-box .close-btn {
-  position: absolute;
-  top: 4px;
-  right: 8px;
-  font-size: 1.2rem;
-  color: #999;
-  cursor: pointer;
-}
-
-    
-    header {
+    .share-box a {
       background: #e04e39;
       color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.25rem;
-      font-weight: 300;
-      margin-bottom: 1rem;
-    }
-
-    nav {
-      background: #333;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: #fff;
-      padding: 1rem;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      background: #555;
-    }
-
-    .cta {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-
-    .cta a {
-      padding: 0.75rem 1.5rem;
-      background-color: #fff;
-      color: #e04e39;
+      padding: 0.4rem 0.8rem;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s ease, transform 0.2s ease;
+      font-size: 0.85rem;
+      margin-right: 0.5rem;
+      display: inline-block;
     }
-
-    .cta a:hover {
-      background-color: #f4f4f4;
-      transform: scale(1.03);
-    }
-
-    .main-container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      margin: 2rem auto;
-      max-width: 1400px;
-      gap: 2rem;
-    }
-
-    .photo-column {
-      width: 30%;
-      padding: 1rem 0;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .photo-column img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .content {
-      width: 100%;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-    }
-
-    h2 {
-      color: #e04e39;
-      margin-top: 2rem;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #333;
-      color: #fff;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 1024px) {
-      .main-container {
-        flex-direction: column;
-        align-items: center;
-      }
-      .photo-column {
-        width: 90%;
-        order: 2;
-      }
-      .content {
-        width: 95%;
-      }
+    .share-box .close-btn {
+      position: absolute;
+      top: 4px;
+      right: 8px;
+      color: #999;
+      font-size: 1.2rem;
+      cursor: pointer;
     }
   </style>
+
+  <!-- Optional: Add hide-after-delay JS here -->
 </head>
 <body>
 
+  <!-- Re-added Header -->
   <header>
     <h1>Alex Ballagh for Ward 8</h1>
-    <p>Building a Stronger, Fairer Hamilton, Together.</p>
-    <div class="cta">
-      <a href="platform.html">Explore the Platform</a>
-      <a href="involve.html">Join the Campaign</a>
-    </div>
-
-    <div class="donate-button">
-  <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID" target="_blank">
-    Donate Now!
-  </a>
-</div>
-    
-        <!-- SHARE PROMPT BOX -->
-<div class="share-box" id="shareBox">
-  <span class="close-btn" onclick="document.getElementById('shareBox').style.display='none'">&times;</span>
-  <p>Change begins with you! Share to:</p>
-  <div class="share-buttons">
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://aballaghforward8.com" target="_blank">Facebook</a>
-    <a href="https://twitter.com/intent/tweet?text=Support%20Alex%20Ballagh%20for%20Ward%208!%20Learn%20more%20at%20https://aballaghforward8.com" target="_blank">Twitter</a>
-    <a href="mailto:?subject=Alex%20Ballagh%20for%20Ward%208&body=Check%20out%20this%20campaign%20site:%20https://aballaghforward8.com" target="_blank">Email</a>
-  </div>
-</div>
+    <p>Building a Stronger, Fairer Hamilton — Together.</p>
   </header>
 
+  <!-- Share Notification Box -->
+  <div class="share-box" id="shareBox">
+    <span class="close-btn" onclick="document.getElementById('shareBox').remove()">×</span>
+    <p>Love this work? Share it:</p>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://aballaghforward8.com/community.html" target="_blank">Facebook</a>
+    <a href="https://twitter.com/intent/tweet?text=Check%20out%20Alex%20Ballagh’s%20community%20work!%20https://aballaghforward8.com/community.html" target="_blank">Twitter</a>
+    <a href="mailto:?subject=Community%20Work%20for%20Ward%208&body=See%20what%20Alex%20is%20working%20on!%20https://aballaghforward8.com/community.html" target="_blank">Email</a>
+  </div>
+
+  <!-- Navigation Menu -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="platform.html">Platform</a>
-    <a href="community.html">Community Work</a>
+    <a href="community.html" class="active">Community Work</a>
     <a href="involve.html">Get Involved</a>
     <a href="news.html">News</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="main-container">
-    <div class="photo-column">
-      <img src="Alex ACORN Emerald 2.jpg" alt="Alex at ACORN" />
-      <img src="Alex Repair Cafe.jpg" alt="Alex at Repair Café" />
-      <img src="Alex unionizes Bold.jpg" alt="Alex organizing workers" />
-          <img src="Alex at Greenbelt.JPG" alt="Alex with supporters" />
-      <img src="Alex CoChair.jpg" alt="Alex co-chairing ACORN" />
-      <img src="Alex at Marathon.jpg" alt="Alex at community event" />
-      <img src="Alex at Greenbelt.JPG" alt="Alex with supporters" />
-        <img src="Pic w Monique and Pal.jpg" alt="Alex with supporters" />
-    </div>
-
-    <div class="content">
-      <section>
-        <h2>Community Leadership</h2>
-        <p>My campaign is powered by years of experience leading grassroots action in Ward 8 and across Hamilton: from housing justice and union rights to climate action and democratic reform. Here's some of what I’ve built and fought for:</p>
-      </section>
-
-      <section>
-  <h2>🏘️ Housing & Tenant Advocacy</h2>
-  <ul>
-    <li>Elected <b>Co-Chair of Hamilton ACORN</b> Downtown Chapter</li>
-    <li>Led passage of <b>Ontario’s first Anti-Renoviction and Anti-Demoviction Bylaws</b>, which have since been adopted in other municipalities; including Toronto and Kitchener-Waterloo</li>
-    <li>Organized Tenant Unions and Delegated to Council at City Hall to demand improvements to housing conditions</li>
-    <li><b>Site Selection Committee Member</b> and <b>Fundraising Organizer</b> with the <b>Hamilton Alliance for Tiny Shelters</b> (HATS)</li>
-    <li>Spearheaded campaigns for a <b>Maximum Heat Bylaw</b> and a <b>Fight Against Predatory Bank Fees</b> (NSF Fees) for low and middle income Canadians</li>
-  </ul>
-</section>
-
-
-     <section>
-  <h2>✊ Labour, Health & Public Services</h2>
-  <ul>
-    <li>Avid supporter of the <b>Hamilton District Labour Council</b> (HDLC), <b>Workers Arts and Heritage Centre</b> (WAHC), and a proud member of <b>Unifor Unit 1, Local 5555</b></li>
-    <li>Founding <b>National Program Coordinator</b> for the <b>National Overdose Response Service (NORS) - Peer Wellness Program</b></li>
-    <li><b>Seminar Trainer</b> for NORS and the Substance Overdose Prevention and Education Network (SOPEN) naloxone workshops across the Greater Toronto-Hamilton Area</li>
-    <li>Organizer with <b>FairVote Canada</b>, fighting to protect democratic election integrity and freedom of choice for voters</li>
-    <li><b>Delegate to the Legislature and Organizer</b> with the <b>Ontario Health Coalition</b>, advocating for public healthcare justice and adequate funding</li>
-    <li>Consistently supports unionized workers in all sectors, dedicated in solidarity with the <b>HDLC</b>, and active advocate for stronger workplace protections</li>
-    <li>Active member of the <b>Hamilton Health Coalition</b>, <b>Ontario Health Coalition</b>, and <b>St. Joe’s Hospital</b> volunteer</li>
-  </ul>
-</section>
-
-    <section>
-  <h2>📣 Political Organizing & Reform</h2>
-  <ul>
-    <li><b>Chair of Federal Election Planning Committee</b> for grassroots candidates</li>
-    <li>Delegate for <b>FairVote Canada</b>, promoting electoral reform and proportional representation</li>
-    <li>Wrote national engagement toolkits for the grassroots political campaigns and trained volunteers across Canada</li>
-    <li>Helped democratize local riding associations and increase youth, newcomer, and equity participation</li>
-  </ul>
-</section>
-
-    <section>
-  <h2>🎓 Student & Youth Leadership</h2>
-  <ul>
-    <li><b>Vice President</b> of the <b>McMaster Graduate Student Association</b> (GSA), serving as a <b>Fiduciary</b> on the <b>Board of Directors</b></li>
-    <li>Reinstated and expanded mental health coverage for all students: Founding the <b>Empower Me</b> program</li>
-    <li><b>Founded the GSA Clubs Committee</b> to support student engagement and community building</li>
-    <li>Oversaw intramural sports and student leagues to strengthen campus life and wellness</li>
-  </ul>
-</section>
-<section>
-  <h2>🎶 Arts & Culture Advocacy</h2>
-  <ul>
-    <li><b>Sole Organizer</b> of the 500-person <b>“Here’s to Hamilton” Concert Fundraiser</b> featuring <b>LTtheMonk</b> and Juno-winner <b>Harrison Kennedy</b></li>
-    <li><b>Volunteer organizer</b> with <b>Black Throne Productions</b>, supporting local metal music and coordinating <b>La Rhune Doomfest</b> two years in a row</li>
-    <li>Active supporter of <b>Hamilton’s Hip-Hop</b> scene and <b>Latin dance</b> events, helping grow grassroots cultural communities across the city</li>
-    <li>Advocates for accessible, inclusive, and well-funded spaces for local artists and performers in Ward 8 and beyond</li>
-  </ul>
-</section>
-
-      <section>
-        <h2>🌿 Local Climate & Justice Work</h2>
-        <ul>
-          <li><b>Organized city-wide campaigns</b> against renoviction, led climate justice protests, and rallied at sustainable development actions, including protecting the <b>Greenbelt</b></li>
-          <li><b>Volunteer</b> with <b>Pride Hamilton</b> supporting LGBTQ+ communities and actions across Ontario</li>
-          <li><b>YWCA Gala Speaker Coordinator</b> and <b>Photographer</b> </li>
-        </ul>
-      </section>
-    </div>
-
-    <div class="photo-column">
-      <img src="Alex Friendly.jpg" alt="Alex smiling with community" />
-      <img src="Alex Leading ACORN Protest.jpg" alt="Alex leading protest" />
-      <img src="Alex marching w union.JPG" alt="Alex marching with union" />
-      <img src="Alex at Pride.JPG" alt="Alex at Pride Hamilton" />
-      <img src="Grocery Greed.JPG" alt="Alex protesting grocery greed" />
-      <img src="picket with CUPE.jpg" alt="Alex supporting CUPE" />
-      <img src="OHCLegislativeDelegation.jpg" alt="Alex supporting CUPE" />
-      <img src="Alex Scientist.JPG" alt="Alex supporting CUPE" />
-    </div>
-  </div>
+  <!-- Community Content (copy-paste from existing page) -->
+  <section>
+    <h2>Community Leadership</h2>
+    <!-- Your bullet list goes here -->
+  </section>
 
   <footer>
-    <p>Authorized by</p>
-    <p>2025 Alex Ballagh for Ward 8</p>
+    <p>Authorized by 2025 Alex Ballagh for Ward 8</p>
   </footer>
 
+  <!-- Optional JS for delayed hide -->
+  <script>
+    setTimeout(() => {
+      const box = document.getElementById('shareBox')
+      if (box) box.style.display = 'none'
+    }, 15000); // hides after 15 seconds
+  </script>
 </body>
 </html>
