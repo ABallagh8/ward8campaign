@@ -18,6 +18,93 @@
       line-height: 1.6;
     }
 
+  .share-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  border: 2px solid #e04e39;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 999;
+  max-width: 300px;
+  font-size: 0.95rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.share-box p {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.share-box .share-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.share-box .share-buttons a {
+  background-color: #e04e39;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.share-box .share-buttons a:hover {
+  background-color: #c43f2c;
+}
+
+.share-box .close-btn {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+    
+    .donate-button {
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    z-index: 1000;
+  }
+
+  .donate-button a {
+    background-color: #FF5722; /* Bright standout orange */
+    color: white; 
+    padding: 20px 32px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .donate-button a:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 600px) {
+    .donate-button {
+      top: 30px;
+      left: 20px;
+    }
+
+    .donate-button a {
+      padding: 14px 22px;
+      font-size: 1.1rem;
+    }
+  }
     header {
       background: #e04e39;
       color: #fff;
@@ -149,6 +236,12 @@
 </head>
 <body>
 
+  <div class="donate-button">
+  <a href="https://www.paypal.com/ncp/payment/54ZN3HZDSJK5C" target="_blank">
+    Donate Now!
+  </a>
+</div>
+  
   <header>
     <h1>Get Involved</h1>
     <p>Help us build a stronger, fairer Ward 8, one small action at a time.</p>
@@ -156,6 +249,16 @@
       <a href="platform.html">Explore the Platform</a>
       <a href="contact.html">Reach Out</a>
     </div>
+    <!-- SHARE PROMPT BOX -->
+<div class="share-box" id="shareBox">
+  <span class="close-btn" onclick="document.getElementById('shareBox').style.display='none'">&times;</span>
+  <p>Share</p>
+  <div class="share-buttons">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://aballaghforward8.com" target="_blank">Facebook</a>
+    <a href="https://twitter.com/intent/tweet?text=Support%20Alex%20Ballagh%20for%20Ward%208!%20Learn%20more%20at%20https://aballaghforward8.com" target="_blank">Twitter</a>
+    <a href="mailto:?subject=Alex%20Ballagh%20for%20Ward%208&body=Check%20out%20this%20campaign%20site:%20https://aballaghforward8.com" target="_blank">Email</a>
+  </div>
+</div>
   </header>
 
   <nav>
